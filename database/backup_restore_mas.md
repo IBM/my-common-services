@@ -3,7 +3,7 @@
 
 The following write-up is informally written and includes example keys and information. The steps have been validated by multiple individuals; however, I cannot take responsibility for any changes or issues that you may encounter and not be able to resolve independently.
 
-## Source System
+## Source System:
 ### Manage Base installed with Demo Data & Demo Users + Spatial add-on.
 
 Step 1. Locate and identify the default, out-of-the-box content of the secret in Manage project: `internal-maximoproperty-secret`. For example:
@@ -91,4 +91,5 @@ This will solve the problem and your database from the source system will be res
 References:
 
 MASDevOps Backup Role: https://github.com/ibm-mas/ansible-devops/tree/master/ibm/mas_devops/roles/db2_backup
+
 MASDevOps Restore Role: https://github.com/ibm-mas/ansible-devops/tree/master/ibm/mas_devops/roles/db2_restore
