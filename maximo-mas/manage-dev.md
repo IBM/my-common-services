@@ -7,7 +7,7 @@ Informal scripts to automate the setup of podman container running local Maximo 
 1. You will need podman installed locally. 
 2. This script assumes you have OpenShift registry setup for when you deployed Manage. The script will check if you may have forgotton to open the Route to the registry.
 3. This script uses `kubeadmin` user. Adjust/change according to your cluster.
-4. This script requires a present-working-directory (I use `mas8`) where you will create the `Dockerfile/Containerfile`.
+4. This script requires a present-working-directory (I use `mas8`) where you will create the `Dockerfile/Containerfile`. Please this file in `\mas8\manage-dev` directory.
 
 ### NOTE
 
