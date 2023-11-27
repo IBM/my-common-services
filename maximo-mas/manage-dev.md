@@ -60,14 +60,17 @@ podman tag $UIDEV manage-ui-dev
 cd ..
 (/home/admin/mas8/manage-dev)
 podman build --build-arg BUNDLE=ui --tag managedev:latest -f ./manage-developer/Containerfile
-
+```
+```
 podman run -dt --name maximo_dev -p 9080:9080/tcp localhost/managedev:latest
 podman start -a -i maximo_dev
-
-localhost:9080/maximo
-maxadmin/maxadmin
-
 ```
+
+Access local Maximo/Manage via the browser:
+
+localhost:9080/maximo `maxadmin/maxadmin`
+
+---
 
 `Containerfile`
 
