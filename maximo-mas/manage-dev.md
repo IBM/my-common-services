@@ -16,6 +16,7 @@ Informal scripts to automate the setup of podman container running local Maximo 
 2. The **local Maximo Manage development environment** connects to your database. 
 3. Replace the IP address and credentials to match yours. 
 4. Do not connect to your production database for this solution.
+5. Follow the above linked official documentation. For the script shared below, I cannot take responsibility for any changes or issues that you may encounter and not be able to resolve independently.
 
 `local-manage.sh`
 
