@@ -34,13 +34,11 @@ confirm_registry
 ##
 podman login -u kubeadmin -p $(oc whoami -t) --tls-verify=false $REGISTRY
 ##
-MAS_INSTANCE_ID=$(oc get suite --all-namespaces --ignore-not-found -o jsonpath
-='{.items[*].metadata.name}') ; echo $MAS_INSTANCE_ID
+MAS_INSTANCE_ID=$(oc get suite --all-namespaces --ignore-not-found -o jsonpath='{.items[*].metadata.name}') ; echo $MAS_INSTANCE_ID
 ##
 oc project mas-${MAS_INSTANCE_ID}-manage
 ##
-MAS_WORKSPACE_ID=$(oc -n mas-masdemo-core get Workspace -o jsonpath='{.items[*
-].metadata.name}') ; echo $MAS_WORKSPACE_ID
+MAS_WORKSPACE_ID=$(oc -n mas-masdemo-core get Workspace -o jsonpath='{.items[*].metadata.name}') ; echo $MAS_WORKSPACE_ID
 ##
 ADMINDEV=$(oc get is ${MAS_WORKSPACE_ID}-admin -o jsonpath='{.status.publicDockerImageRepository}') ; echo $ADMINDEV
 ##
